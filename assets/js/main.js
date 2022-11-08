@@ -34,7 +34,15 @@ function counter_num(){
 };
 counter_num();
 
+// mobile-search-area
 
+$('.search').on("click", function(){
+  $('.mobile-search').addClass('slide');
+});
+
+$('.search-cross-btn').on("click", function(){
+  $('.mobile-search').removeClass('slide');
+});
 
 /* ---------------------------------------------
      NiceSelect
