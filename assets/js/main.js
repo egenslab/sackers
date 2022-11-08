@@ -49,6 +49,19 @@ $('.search-cross-btn.two').on("click", function(){
 });
 
 
+
+$('.mobile-menu-btn').on("click", function(){
+  $('.main-nav').toggleClass('menu-slide');
+});
+
+// submenu
+$(document).ready(function(){
+  $(".main-nav li").click(function(){
+    
+    var target = $(".sub-menu-block");
+    $(target).slideToggle();
+  });
+});
 /* ---------------------------------------------
      NiceSelect
 --------------------------------------------- */
