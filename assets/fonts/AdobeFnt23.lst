@@ -1,0 +1,176 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/AdobeFnt23.lst
+FileLength:3973
+FileModTime:689168247
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Black
+FamilyName:Lato
+StyleName:Black
+MenuName:Lato Black
+StyleBits:0
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Lato Black
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/Lato-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:69484
+FileModTime:314064000
+NameArray:0,Win,1,Lato Black
+NameArray:0,Win,16,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Bold
+FamilyName:Lato
+StyleName:Bold
+MenuName:Lato
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Lato Bold
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/Lato-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:73316
+FileModTime:314064000
+NameArray:0,Win,1,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Light
+FamilyName:Lato
+StyleName:Light
+MenuName:Lato Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Lato-Light
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/Lato-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:77192
+FileModTime:314064000
+NameArray:0,Win,1,Lato Light
+NameArray:0,Win,16,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-LightItalic
+FamilyName:Lato
+StyleName:Light Italic
+MenuName:Lato Light
+StyleBits:1
+WeightClass:300
+WidthClass:5
+AngleClass:1
+FullName:Lato-LightItalic
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/Lato-LightItalic.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:49064
+FileModTime:314064000
+NameArray:0,Win,1,Lato Light
+NameArray:0,Win,16,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Lato-Regular
+FamilyName:Lato
+StyleName:Regular
+MenuName:Lato
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Lato Regular
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/Lato-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:75136
+FileModTime:314064000
+NameArray:0,Win,1,Lato
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:LubalinGraphStd-Book
+FamilyName:ITC Lubalin Graph Std
+StyleName:Book
+MenuName:ITC Lubalin Graph Std Book
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:ITC Lubalin Graph Std Book
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/LubalinGraphStd-Book.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:27312
+FileModTime:470329560
+NameArray:0,Mac,4,ITC Lubalin Graph Std Book
+NameArray:0,Win,1,ITC Lubalin Graph Std Book
+NameArray:0,Win,16,ITC Lubalin Graph Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/robertsoar/Desktop/OVERTURE_clients/Sackers/Website/InDesign/Sackers_website_v7_03 Nov Folder/Document fonts/MinionPro-Regular 2.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:403185492
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
