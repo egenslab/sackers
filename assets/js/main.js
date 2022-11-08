@@ -36,13 +36,18 @@ counter_num();
 
 // mobile-search-area
 
+// $('.mobile-search').removeClass('slide');
+
 $('.search').on("click", function(){
+
+  
   $('.mobile-search').addClass('slide');
 });
 
-$('.search-cross-btn').on("click", function(){
+$('.search-cross-btn.two').on("click", function(){
   $('.mobile-search').removeClass('slide');
 });
+
 
 /* ---------------------------------------------
      NiceSelect

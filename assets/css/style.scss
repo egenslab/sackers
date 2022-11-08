@@ -530,6 +530,11 @@ i.bx {
     visibility: hidden;
     transition: 0.65s ease;
     padding: 35px 100px;
+    &.slide {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
   }
   
   @media (max-width: 767px) {
@@ -543,11 +548,6 @@ i.bx {
     font-family: saira, sans-serif;
   }
   
-  .mobile-search.slide {
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-  }
   
   .mobile-search input {
     border: none;
@@ -607,6 +607,10 @@ i.bx {
   
   .mobile-search .search-cross-btn i {
     font-size: 25px;
+    cursor: pointer;
+  }
+  .mobile-search .search-cross-btn.one i {
+    font-size: 18px;
     cursor: pointer;
   }
 /*=======================================
@@ -845,10 +849,10 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 }
 
 .ic {
-  position: fixed; 
+  position: absolute; 
   cursor: pointer;
   display: inline-block;
-  right: 50px;
+  right: 0px;
   width: 32px;
   height: 24px;
   text-align: center;
@@ -1134,7 +1138,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   header.light ul.main-nav > li > a:after { background-color: #999; }
   
   /* Drop Down/Up Arrow for Mega Menu */
-  ul.main-nav > li > a.mega-menu > span { display: block; vertical-align: middle; }
+  ul.main-nav > li > a.mega-menu > span { display: block; vertical-align: middle; cursor: pointer; }
 
   .banners-area { border-top: 1px solid #ccc; }
 }
@@ -1330,7 +1334,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
     }
     .post-meta{
         border-bottom: 2px solid var(--primary-color1);
-        padding-bottom: 5px;
+        padding-bottom: 8px;
         a{
             color: var(--title-color-dark);
             font-family: var(--font-lato);
@@ -1585,6 +1589,17 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 =======================================*/
 .our-client-area{
     padding: 70px 0;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 20px;
+        @include xl-down-device(){
+            justify-content: center !important;
+        }
+    }
+
 }
 
 /*=======================================
