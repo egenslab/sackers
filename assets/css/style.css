@@ -1493,8 +1493,13 @@ header.style-1 .top-level-link .sm-text span {
   background-image: url(../images/bg/people-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center left;
+  background-position: center center;
   padding: 80px 0;
+}
+@media (max-width: 767px) {
+  .our-people-area {
+    background-position: center left;
+  }
 }
 .our-people-area .people-content {
   max-width: 700px;
