@@ -975,7 +975,8 @@ header.style-1 .ic.menu:focus {
 }
 @media only screen and (max-width: 991px) {
   header.style-1 .sub-menu-head {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1176,6 +1177,11 @@ header.style-1 .top-level-link .sm-text {
 header.style-1 .top-level-link .sm-text span {
   font-size: 18px;
   display: inline-block;
+}
+@media (max-width: 991px) {
+  header.style-1 .top-level-link .sub-menu-block {
+    padding-bottom: 25px;
+  }
 }
 @media (max-width: 991px) {
   header.style-1 .top-level-link .sub-menu-block .sub-menu-lists li a {
@@ -1382,6 +1388,12 @@ header.style-1 .top-level-link .sm-text span {
   line-height: 38px;
   color: var(--title-color-dark);
 }
+@media (max-width: 767px) {
+  .about-us-area .about-content P {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
 .about-us-area .go-btn {
   padding-top: 20px;
 }
@@ -1528,6 +1540,11 @@ header.style-1 .top-level-link .sm-text span {
     margin-left: 0;
   }
 }
+@media (max-width: 767px) {
+  .our-people-area .people-content .author-details-area {
+    padding-top: 70px;
+  }
+}
 .our-people-area .people-content .author-details-area h6 {
   font-size: 14px;
   font-family: var(--font-lato);
@@ -1583,7 +1600,8 @@ header.style-1 .top-level-link .sm-text span {
 }
 @media (max-width: 767px) {
   .services-area p {
-    font-size: 25px;
+    font-size: 22px;
+    line-height: 34px;
   }
 }
 .services-area .services-feature {
@@ -1760,7 +1778,7 @@ footer .footer-content .copyright-area {
 }
 footer .footer-content .copyright-area p {
   font-size: 14px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   font-family: var(--font-lato);
   font-weight: 300;
 }
