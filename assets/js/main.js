@@ -62,6 +62,10 @@ $('.menu-close-btn').on("click", function(){
 //     $(target).slideToggle();
 //   });
 // });
+$('.back-to-top').on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({ scrollTop: 0 }, '300');
+});
 
 $(".main-nav li").on('click', function(e) {
   e.preventDefault();

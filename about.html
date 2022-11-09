@@ -65,10 +65,23 @@
     <!-- ========== header============= -->
     <header class="header-area style-1">
         <div class="container-fluid ">
+            <a href="index.html" class="header-logo d-lg-none d-block">
+                <img src="assets/images/sackers-logo-optimised.png" alt="">
+            </a>
+            <div class="mobile-menu-btn ic menu " tabindex="1">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="main-menu-wrap">
+                <div class="menu-close-btn d-lg-none d-block">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <div class="mobile-menu-logo  d-lg-none d-block">
+                    <img src="assets/images/bg/sackers-logo-white-full.png" alt="">
+                </div>
             <div class="top-nav">
                 <ul>
-                    <li class="menu-item"><a href="index.html">Home</a></li>
-                    <li class="menu-item active"><a href="about.html">About</a></li>
+                    <li class="menu-item active"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
                     <li class="menu-item"><a href="#">Events</a></li>
                     <li class="menu-item"><a href="#">Blog</a></li>
                     <li class="menu-item"><a href="#">News</a></li>
@@ -77,12 +90,6 @@
 
                     <li class="search"><a href="#"><i class="bi bi-search"></i></a>
                         <div class="search-wrapper">
-                            <p>Search</p>
-                            <form action="https://www.sackers.com/" method="get" id="header-search">
-                                <input type="text" name="s" class="search-field" id="search-top" placeholder="Search">
-                                <label class="hide" for="search-top">Search</label>
-                                <a class="search-button submit" href="#"><span class="hide">Submit</span></a>
-                            </form>
                         </div>
                     </li>
 
@@ -91,147 +98,117 @@
             </div>
             
             <div class="menu-btm d-flex justify-content-between">
-                <a href="index.html" class="header-logo">
+                <a href="index.html" class="header-logo d-lg-block d-none">
                     <img src="assets/images/sackers-logo-optimised.png" alt="">
                 </a>
                 <nav role="navigation">
-                    <a href="javascript:void(0);" class="ic menu" tabindex="1">
-                      <span class="line"></span>
-                      <span class="line"></span>
-                      <span class="line"></span>
-                    </a>
-                    <a href="javascript:void(0);" class="ic close"></a>
                     <ul class="main-nav">
-                        <div class="mobile-menu-logo  d-lg-none d-block">
-                            <img src="assets/images/bg/sackers-logo-white-full.png" alt="">
-                        </div>
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="index.html"><span>Home</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" class="active" href="about.html"><span>About</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="#"><span>Events</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="#"><span>Blog</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="#"><span>News</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="#"><span>Careers</span></a>      
-                      </li> 
-                      <li class="top-level-link d-lg-none d-block">
-                        <a class="sm-text" href="#"><span>Contact</span></a>      
-                      </li> 
-                      
-                      
-                      <li class="top-level-link">
+
+                        
+                        <li class="top-level-link" id="service">
                         <a href="services.html" class="mega-menu"><span>SERVICES </span></a>
                         <div class="sub-menu-block">
-                          <div class="row">
+                            <div class="row">
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Company</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Company</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Mission</a></li>
                                 <li><a href="#">Community</a></li>
                                 <li><a href="#">Team</a></li>
-                              </ul>           
+                                </ul>           
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Media</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Media</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Blog</a></li>
-                              </ul>
+                                </ul>
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Careers</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Careers</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">New Opportunities</a></li>
                                 <li><a href="#">Life @ Company</a></li>
                                 <li><a href="#">Why Join Us?</a></li>
-                              </ul>
+                                </ul>
                             </div>
-                          </div>
-                          
+                            </div>
+                            
                         </div>
-                      </li>
-                      <li class="top-level-link">
+                        </li>
+                        <li class="top-level-link"id="people">
                         <a class="mega-menu"><span>PEOPLE</span></a>
                         <div class="sub-menu-block">
-                          <div class="row">
+                            <div class="row">
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Company</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Company</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Mission</a></li>
                                 <li><a href="#">Community</a></li>
                                 <li><a href="#">Team</a></li>
-                              </ul>           
+                                </ul>           
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Media</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Media</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Blog</a></li>
-                              </ul>
+                                </ul>
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Careers</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Careers</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">New Opportunities</a></li>
                                 <li><a href="#">Life @ Company</a></li>
                                 <li><a href="#">Why Join Us?</a></li>
-                              </ul>
+                                </ul>
                             </div>
-                          </div>
-                          
+                            </div>
+                            
                         </div>
-                      </li>
-                      <li class="top-level-link">
+                        </li>
+                        <li class="top-level-link" id="insights">
                         <a class="mega-menu"><span>INSIGHTS</span></a>
                         <div class="sub-menu-block">
-                          <div class="row">
+                            <div class="row">
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">INSIGHTS</h2>
-                              <ul class="sub-menu-lists">
-                                <li><a href="about.html">About</a></li>
+                                <h2 class="sub-menu-head">INSIGHTS</h2>
+                                <ul class="sub-menu-lists">
+                                <li><a href="#">About</a></li>
                                 <li><a href="#">Mission</a></li>
                                 <li><a href="#">Community</a></li>
                                 <li><a href="#">Team</a></li>
-                              </ul>           
+                                </ul>           
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Media</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Media</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">Events</a></li>
                                 <li><a href="#">Blog</a></li>
-                              </ul>
+                                </ul>
                             </div>
                             <div class="col-md-4 col-lg-4 col-sm-4">
-                              <h2 class="sub-menu-head">Careers</h2>
-                              <ul class="sub-menu-lists">
+                                <h2 class="sub-menu-head">Careers</h2>
+                                <ul class="sub-menu-lists">
                                 <li><a href="#">New Opportunities</a></li>
                                 <li><a href="#">Life @ Company</a></li>
                                 <li><a href="#">Why Join Us?</a></li>
-                              </ul>
+                                </ul>
                             </div>
-                          </div>
-                          
+                            </div>
+                            
                         </div>
-                      </li>
+                        </li>
                     </ul> 
-                  </nav>
+                </nav>
             </div>
-
-
+        </div>
+           
 
         </div>
     </header>

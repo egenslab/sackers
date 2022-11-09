@@ -688,8 +688,7 @@ header.style-1 {
         display: flex; 
         justify-content: end;
         @include lg-down-device(){
-            display: none;
-            visibility: hidden;
+            justify-content: start;
         }
         ul{
             margin: 0;
@@ -700,6 +699,10 @@ header.style-1 {
                 text-align: left;
                 padding: 0 12px;
                 position: relative;
+                @include lg-down-device(){
+                    display: block;
+                    padding: 0;
+                }
                 &::after{
                     content: '';
                     height: 10px;
@@ -709,7 +712,10 @@ header.style-1 {
                     right: -2px;
                     top: 52%;
                     transform: translateY(-50%);
-
+                    @include lg-down-device(){
+                        display: none;
+                        visibility: hidden;
+                    }
                 }
                 &:nth-child(7){
                     &::after{
@@ -728,11 +734,25 @@ header.style-1 {
                     &:hover{
                         color: var(--text-color1);
                     }
+                    @include lg-down-device(){
+                        display: block;
+                        padding:5px 30px;
+                        position: relative;
+                        color: #fff;
+                        font-size: 24px;
+                        font-weight: 600;
+                        font-family: var(--font-Lubalin);
+                        box-sizing: border-box;
+                        
+                    }
                     
                 }
                 &.active{
                     a{
                         color: var(--primary-color1);
+                        @include lg-down-device(){
+                            color: var(--text-color1);
+                        }
                     }
                 }
                 &.search{
@@ -743,6 +763,10 @@ header.style-1 {
                     @include xxl-down-device(){
                         margin-right: -130px;
                         margin-left: 200px;
+                    }
+                    @include lg-down-device(){
+                        display: none;
+                        visibility: hidden;
                     }
                     @include xl-down-device(){
                         margin-right: -40px;
@@ -818,6 +842,9 @@ ul.main-nav {
   font-size: 0px;
   max-width: 1000px;
   margin: 0 auto;
+  @include lg-down-device(){
+    padding-top: 50px;
+  }
 }
 
 ul.main-nav > li { 
@@ -869,11 +896,6 @@ ul.main-nav > li ul.sub-menu-lists > li {
 ul.main-nav > li ul.sub-menu-lists > li > a {
   font-size: 14px;
 }
-
-
-
-
-
 
 .sub-menu-head { margin: 10px 0; }
 .banners-area { margin-top: 20px; padding-top: 15px; }
@@ -954,7 +976,7 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
 .mobile-menu-btn{
     position: absolute;
     top: 24px;
-    right: 0px;
+    right: 35px;
     i{
         font-size: 25px;
     color: var(--text-color1);
@@ -1016,6 +1038,9 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
   ul.main-nav > li {
     display: block;
     border-bottom: 1px solid rgba(#fff, 0.5);
+    @include lg-down-device(){
+        border-bottom: unset;
+    }
   }
   
   ul.main-nav > li > a { font-weight: 600; }
@@ -1188,8 +1213,15 @@ ul.main-nav > li ul.sub-menu-lists > li > a {
             }
         }
     }
+
 }
 
+        @include lg-down-device(){
+            header.style-1 ul.main-nav > li {
+                display: block;
+                border-bottom: 1px solid red;
+            }
+        }
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2058,6 +2090,8 @@ footer{
    14.  Author Area
 =======================================*/
 .author-area{
+    background-color: #ECE8EB;
+    padding: 60px 0;
     .single-author-card{
         .author-img{
             img{
@@ -2099,6 +2133,24 @@ footer{
                         color: #88746a;
                     }
                 }
+            }
+        }
+    }
+    .go-btn{
+        padding-top: 50px;
+        a{
+            font-size: 14px;
+            font-family: var(--font-lato);
+            font-weight: 700;
+            color: var(--title-color-dark);
+            border: 1px solid #000;
+            padding: 10px 50px;
+            display: inline-block;
+            transition: 0.35s;
+            &:hover{
+                background-color: var(--primary-color1);
+                color: var(--white);
+                border-color: var(--primary-color1);
             }
         }
     }

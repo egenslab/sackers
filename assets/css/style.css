@@ -616,8 +616,7 @@ header.style-1 .top-nav {
 }
 @media (max-width: 991px) {
   header.style-1 .top-nav {
-    display: none;
-    visibility: hidden;
+    justify-content: start;
   }
 }
 header.style-1 .top-nav ul {
@@ -631,6 +630,12 @@ header.style-1 .top-nav ul li {
   padding: 0 12px;
   position: relative;
 }
+@media (max-width: 991px) {
+  header.style-1 .top-nav ul li {
+    display: block;
+    padding: 0;
+  }
+}
 header.style-1 .top-nav ul li::after {
   content: "";
   height: 10px;
@@ -640,6 +645,12 @@ header.style-1 .top-nav ul li::after {
   right: -2px;
   top: 52%;
   transform: translateY(-50%);
+}
+@media (max-width: 991px) {
+  header.style-1 .top-nav ul li::after {
+    display: none;
+    visibility: hidden;
+  }
 }
 header.style-1 .top-nav ul li:nth-child(7)::after {
   display: none;
@@ -656,8 +667,25 @@ header.style-1 .top-nav ul li a {
 header.style-1 .top-nav ul li a:hover {
   color: var(--text-color1);
 }
+@media (max-width: 991px) {
+  header.style-1 .top-nav ul li a {
+    display: block;
+    padding: 5px 30px;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font-Lubalin);
+    box-sizing: border-box;
+  }
+}
 header.style-1 .top-nav ul li.active a {
   color: var(--primary-color1);
+}
+@media (max-width: 991px) {
+  header.style-1 .top-nav ul li.active a {
+    color: var(--text-color1);
+  }
 }
 header.style-1 .top-nav ul li.search {
   position: relative;
@@ -669,6 +697,12 @@ header.style-1 .top-nav ul li.search {
   header.style-1 .top-nav ul li.search {
     margin-right: -130px;
     margin-left: 200px;
+  }
+}
+@media (max-width: 991px) {
+  header.style-1 .top-nav ul li.search {
+    display: none;
+    visibility: hidden;
   }
 }
 @media (max-width: 1199px) {
@@ -743,6 +777,11 @@ header.style-1 ul.main-nav {
   font-size: 0px;
   max-width: 1000px;
   margin: 0 auto;
+}
+@media (max-width: 991px) {
+  header.style-1 ul.main-nav {
+    padding-top: 50px;
+  }
 }
 header.style-1 ul.main-nav > li {
   display: inline-block;
@@ -859,7 +898,7 @@ header.style-1 .ic.menu:focus {
   header.style-1 .mobile-menu-btn {
     position: absolute;
     top: 24px;
-    right: 0px;
+    right: 35px;
   }
   header.style-1 .mobile-menu-btn i {
     font-size: 25px;
@@ -917,24 +956,41 @@ header.style-1 .ic.menu:focus {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
+}
+@media only screen and (max-width: 991px) and (max-width: 991px) {
+  header.style-1 ul.main-nav > li {
+    border-bottom: unset;
+  }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 ul.main-nav > li > a {
     font-weight: 600;
   }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 ul.main-nav > li ul.sub-menu-lists > li a {
     color: #fff;
     font-size: 14px;
   }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 .sub-menu-head {
     font-size: 16px;
   }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 ul.main-nav > li:hover {
     background-color: transparent;
   }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 ul.main-nav > li:hover > a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
   }
+}
+@media only screen and (max-width: 991px) {
   header.style-1 .ic.menu:focus ~ ul.main-nav > li > div.sub-menu-block {
     position: relative;
     visibility: visible;
@@ -1126,6 +1182,12 @@ header.style-1 .top-level-link .sm-text span {
     font-size: 16px;
     font-family: var(--font-lato);
     font-weight: 300;
+  }
+}
+@media (max-width: 991px) {
+  header.style-1 header.style-1 ul.main-nav > li {
+    display: block;
+    border-bottom: 1px solid red;
   }
 }
 @media only screen and (max-width: 959px) {
@@ -1986,6 +2048,10 @@ footer .footer-content .footer-menu li a:hover {
 /*=======================================
    14.  Author Area
 =======================================*/
+.author-area {
+  background-color: #ECE8EB;
+  padding: 60px 0;
+}
 @media (max-width: 767px) {
   .author-area .single-author-card .author-img img {
     width: 100%;
@@ -2023,4 +2089,22 @@ footer .footer-content .footer-menu li a:hover {
 }
 .author-area .single-author-card .author-content .contact-info p a {
   color: #88746a;
+}
+.author-area .go-btn {
+  padding-top: 50px;
+}
+.author-area .go-btn a {
+  font-size: 14px;
+  font-family: var(--font-lato);
+  font-weight: 700;
+  color: var(--title-color-dark);
+  border: 1px solid #000;
+  padding: 10px 50px;
+  display: inline-block;
+  transition: 0.35s;
+}
+.author-area .go-btn a:hover {
+  background-color: var(--primary-color1);
+  color: var(--white);
+  border-color: var(--primary-color1);
 }/*# sourceMappingURL=style.css.map */
