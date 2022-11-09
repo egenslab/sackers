@@ -39,8 +39,6 @@ counter_num();
 // $('.mobile-search').removeClass('slide');
 
 $('.search').on("click", function(){
-
-  
   $('.mobile-search').addClass('slide');
 });
 
@@ -48,20 +46,31 @@ $('.search-cross-btn.two').on("click", function(){
   $('.mobile-search').removeClass('slide');
 });
 
-
-
+// mobile menu
 $('.mobile-menu-btn').on("click", function(){
-  $('.main-nav').toggleClass('menu-slide');
+  $('.main-menu-wrap').addClass('slide');
+});
+$('.menu-close-btn').on("click", function(){
+  $('.main-menu-wrap').removeClass('slide');
 });
 
 // submenu
-$(document).ready(function(){
-  $(".main-nav li").click(function(){
+// $(document).ready(function(){
+//   $(".main-nav li").click(function(){
     
-    var target = $(".sub-menu-block");
-    $(target).slideToggle();
-  });
+//     var target = $(".sub-menu-block");
+//     $(target).slideToggle();
+//   });
+// });
+
+$(".main-nav li").on('click', function(e) {
+  e.preventDefault();
+  $(".sub-menu-block").slideToggle();
+  $(this).toggleClass('active');
+
 });
+
+
 /* ---------------------------------------------
      NiceSelect
 --------------------------------------------- */
@@ -96,5 +105,6 @@ var swiper = new Swiper(".banner1-slider", {
     el: ".swiper-pagination",
   },
 });
+
 
 }(jQuery));
